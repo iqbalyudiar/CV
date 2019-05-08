@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import project1 from "../assets/img/project1.png";
 import project2 from "../assets/img/project2.png";
 import project3 from "../assets/img/project3.png";
@@ -17,9 +18,16 @@ class Portofolio extends React.Component {
         <section id={this.props.id} className="bg-dark text-center py-5">
           <div className="container">
             <h1 className="display-4 mt-5 text-light">My Portofolio</h1>
-            <a href="#portofolio-section" className="btn btn-outline-secondary">
+            <Link
+              to="portofolio-section"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="btn btn-outline-secondary"
+            >
               Find Out
-            </a>
+            </Link>
           </div>
         </section>
 
