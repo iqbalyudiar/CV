@@ -1,0 +1,8 @@
+@media only screen and (max-width: 450px) {
+    #portofolio-section{
+        margin-bottom: 80em;
+    }
+    #project-1, #project-2{
+        margin-bottom: 2em;
+    }
+}
